@@ -9,7 +9,7 @@ The latest rent data is scraped from [Lianjia](https://gz.lianjia.com/zufang/) o
 
 The latest metro station data is collected from the official website [Guangzhou Metro](http://cs.gzmtr.com/ckfw/) in May 2020, which is relatively stable in a few months.
 
-The geocoding service used for getting the longitude and latitude data is [AMap Geocoding](https://lbs.amap.com/api/webservice/guide/api/georegeo) and [AMap POI](https://lbs.amap.com/api/webservice/guide/api/search) run by Alibaba.
+The geocoding service used for getting the longitude and latitude data is [AMap Geocoding](https://lbs.amap.com/api/webservice/guide/api/georegeo) and [AMap POI](https://lbs.amap.com/api/webservice/guide/api/search) run by Alibaba. **The API key for using the above services has not been provided. Please apply for one via [Application for the AMap API key](https://lbs.amap.com/api/webservice/guide/create-project/get-key)**
 
 #### Tips for the geocoding service
 *The longitudes and latitudes returned are based on the coordinates different than the usual WGS84 (or EPSG 4326) CRS (coordinate reference system). 
