@@ -113,7 +113,7 @@ def ParsePage(html):
             'link': HOST + r.find('.content__list--item--title.twoline a').attr('href'),
             'district': r.find('.content__list--item--des a:nth-child(1)').text(),
             'neighborhood': r.find('.content__list--item--des a:nth-child(2)').text(),
-            'area': re.search(r'\d+', r.find('.content__list--item--des').text()).group(0),
+            'area': re.search(r'(\d+)\u33a1', r.find('.content__list--item--des').text()).group(1),
             'price': r.find('.content__list--item-price em').text(),
             'unit': re.sub(r'[-\d\s]+', '',  r.find('.content__list--item-price').text())
             }
@@ -136,7 +136,13 @@ def Main():
     for i in range(GetMaxPage()):
         url = '{catelog}pg{pagenum}rco11/'.format(catelog=CATELOG_URL, pagenum=i+1)
         print('Fetching...', url)
-        html = GetPage(url)
+        
+        try:
+            html = GetPage(url)
+        except URLError as err:
+            with open('unsuccessful_summary_page.log', 'a+') as fhand:
+                fhand.write('\n'.join(err.args[0], url))
+            continue
         
         if html is None:
             continue
