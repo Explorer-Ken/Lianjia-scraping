@@ -2,7 +2,7 @@
 This repo is to present the process of web scraping for the rent data on lianjia, one of the most popular platform for information alike. The main features used include requests, pyquery, sqlite, selenium and AMap Geocoding API. The metro information in Canton/Guangzhou is also included via scraping the official website, which is useful for understanding the rent data among a metropolitan with advanced public transportation system. In the end, a small-scaled wrangling and visualization of the data via pandas and folium are presented.
 
 ## Acknowledgement
-The latest rent data is scraped from [Lianjia](https://gz.lianjia.com/zufang/) on 22 May 2020, which keeps updating due to transaction reason.
+The latest rent data is scraped from [Lianjia](https://gz.lianjia.com/zufang/) on 23 May 2020, which keeps updating due to transaction reason.
 
 #### Tips for the rent data collected
 *The rent data collected via Lianjia platform represent the intentional prices of the landlords. According to the website, more than a half of the landlords accept further negotiation of the rent registered. Thus, the rent data scraped do not represent the final price of agreement.*
@@ -27,8 +27,11 @@ As stated above, the rent data acquired represent only small amount of the platf
 
 ## Inspiration for further study of the data
 1. How will the distance to the nearest metro station affect the rent asked for?
+
 2. How will the elevator(s) influence the rent asked for? What about considering the floors of the houses at the same time?
+
 3. What's the general trend for the rent asked for geometrically, like going from the west side to the east side of the city?
+
 4. Can any model for predicting the approximate rent given certain conditions of the houses be created?
 
 ## Further improvement and update
@@ -37,9 +40,12 @@ Any suggestion related is welcomed, especially those help me to better develop t
 1. Due to Lianjia's data strategy, only about 3,000 newest records can be retrived at a certain time.
 In order to study the rent data better, it would be useful to add more data into the pool as time goes by, under a reasonable and legal scrapying strategy. The data would be updated on an irregular basis.
 
-2. More secondary factors contributing to the rent, like the electric products in the house, can be added to the data.
+2. More sources of houses can be added.
 
-3. Economic data among the districts can be added, so as to get a better understanding of how economy factors influence the rent.
+3. More secondary factors contributing to the rent, like the electric products in the house, can be added to the data.
 
-4. Bus transportation data in the city can be added, since the bus system is another important component of the public transportation.
+4. Economic data among the districts can be added, so as to get a better understanding of how economic factors influence the rent.
 
+5. Bus transportation data in the city can be added, since the bus system is another important component of the public transportation.
+
+6. Distributed scraping techniques can be added, so as to speed up the scraping process.
