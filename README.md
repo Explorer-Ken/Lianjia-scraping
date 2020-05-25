@@ -25,6 +25,20 @@ As stated above, the rent data acquired represent only small amount of the platf
 - Scraping the existing metro lines and stations and save to database
 - Visualizing the most current rent data via folium
 
+## Example visualizations
+Since Github cannot display the interactive map created by folium, examples will be presented as pictures. For the interactive maps, please refer to the [notebook](https://github.com/Explorer-Ken/Lianjia-scraping/blob/master/Community%20Visualization.ipynb).
+
+<dl align="center">
+  <img src="https://github.com/Explorer-Ken/Lianjia-scraping/blob/master/Cluster.jpg" width="480px" height="270px" alt="Cluster Map">
+  <dd>Cluster map of houses for rent</dd>
+  <img src="https://github.com/Explorer-Ken/Lianjia-scraping/blob/master/Heatmap.jpg" width="480px" height="270px" alt="Heatmap">
+  <dd>Heatmap of houses for rent</dd>
+  <img src="https://github.com/Explorer-Ken/Lianjia-scraping/blob/master/RentType.jpg" width="480px" height="270px" alt="RentType Distribution">
+  <dd>Rent type distribution</dd>
+  <img src="https://github.com/Explorer-Ken/Lianjia-scraping/blob/master/Elevator.jpg" width="480px" height="270px" alt="Elevator Status Distribution">
+  <dd>Elevator status distribution</dd>
+</dl>
+
 ## Inspiration for further study of the data
 1. How will the distance to the nearest metro station affect the rent asked for?
 
