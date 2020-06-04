@@ -2,7 +2,10 @@
 This repo is to present the process of web scraping for the rent data on lianjia, one of the most popular platform for information alike. The main features used include requests, pyquery, sqlite, selenium and AMap Geocoding API. The metro information in Canton/Guangzhou is also included via scraping the official website, which is useful for understanding the rent data among a metropolitan with advanced public transportation system. In the end, a small-scaled wrangling and visualization of the data via pandas and folium are presented.
 
 ## Acknowledgement
-The latest rent data is scraped from [Lianjia](https://gz.lianjia.com/zufang/) on 23 May 2020, which keeps updating due to transaction reason.
+
+*Update: Additional data scraped on 3 June 2020 has been appended to the csv files.*
+
+The latest rent data is scraped from [Lianjia](https://gz.lianjia.com/zufang/) on 23 May 2020 and 3 June 2020, which keeps updating due to transaction reason.
 
 #### Tips for the rent data collected
 *The rent data collected via Lianjia platform represent the intentional prices of the landlords. According to the website, more than a half of the landlords accept further negotiation of the rent registered. Thus, the rent data scraped do not represent the final price of agreement.*
