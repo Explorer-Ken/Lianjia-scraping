@@ -165,9 +165,17 @@ def Main(city=CITY):
 
     cur = conn.cursor()
     extract_sql = 'SELECT DISTINCT District, Community FROM `{city}-detail`'.format(city=city)
+    check_sql = '''SELECT Longitude, Latitude FROM `{city}-community`
+                   WHERE (District=?) AND (Community=?)
+                '''.format(city=city)
 
     for rec in cur.execute(extract_sql):
         num_total += 1
+        check_result = conn.execute(check_sql, rec).fetchone()
+        
+        if check_result and (None not in check_result):
+            continue
+
         community_georecord = GetGeoRecord(*rec)
         num_suc += CommunityGeoInsert(conn, community_georecord)
         time.sleep(random.uniform(0, 2))
