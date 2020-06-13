@@ -3,12 +3,14 @@ This repo is to present the process of web scraping for the rent data on lianjia
 
 ## Acknowledgement
 
-*Update: Additional data scraped on 3 June 2020 has been appended to the csv files.*
+*Update: Additional data scraped on 3 June 2020, 12 June 2020 has been appended to the csv files.*
 
-The latest rent data is scraped from [Lianjia](https://gz.lianjia.com/zufang/) on 23 May 2020 and 3 June 2020, which keeps updating due to transaction reason.
+The latest rent data is scraped from [Lianjia](https://gz.lianjia.com/zufang/) on 23 May 2020, 3 June 2020 and 12 June 2020, which keeps updating due to transaction reason.
 
 #### Tips for the rent data collected
 *The rent data collected via Lianjia platform represent the intentional prices of the landlords. According to the website, more than a half of the landlords accept further negotiation of the rent registered. Thus, the rent data scraped do not represent the final price of agreement.*
+
+*Also notice that there may be some extreme values for the area of the house due to input error by the operators which will become outliers in the analysis.*
 
 The latest metro station data is collected from the official website [Guangzhou Metro](http://cs.gzmtr.com/ckfw/) in May 2020, which is relatively stable in a few months.
 
