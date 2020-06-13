@@ -179,7 +179,14 @@ def GetOneDetail(rec):
     title, link, district, neighborhood, area, price, unit = rec
 
     title = re.sub(r'[^\u00b7\w\s]', '', title)
-    renttype, community, condition = re.search(r'(.+)?·([\w]+)\s(.*)\s?.*', title).groups()
+    if re.search(r'(.+)?·([\w]+)\s(.*)\s?.*', title):
+        renttype, community, condition = re.search(r'(.+)?·([\w]+)\s(.*)\s?.*', title).groups()
+    else:
+        with open('unsuccessful_detail_page.log', 'a+') as fhand:
+            fhand.write('Regex error:\n')
+            fhand.write(link)
+            fhand.write('\n')
+        renttype, community, condition = None, None, None
     
     info = {'District': district, 'Neighborhood': neighborhood, 'Community': community, \
     'RentType': renttype, 'Condition': condition, 'Area': area, 'Price': price, 'Unit': unit}
