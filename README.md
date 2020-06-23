@@ -3,9 +3,11 @@ This repo is to present the process of web scraping for the rent data on lianjia
 
 ## Acknowledgement
 
-*Update: Additional data scraped on 3 June 2020, 12 June 2020 has been appended to the csv files.*
+*Update: Additional data scraped on 3 June 2020, 12 June 2020, 22 June 2020 have been appended to the csv files.*
 
-The latest rent data is scraped from [Lianjia](https://gz.lianjia.com/zufang/) on 23 May 2020, 3 June 2020 and 12 June 2020, which keeps updating due to transaction reason.
+**Since the number of records in the dataset has exceeded 10k, and all the data are scraped within a month in 2020, I believe they are somewhat sufficient for representing the rent in the city (or least in the nearby period). Thus, the next update may follow an irregular basis and may focus more on analysis or code improvement.**
+
+The latest rent data is scraped from [Lianjia](https://gz.lianjia.com/zufang/) on 23 May 2020, 3 June 2020, 12 June 2020 and 22 June 2020, which keeps updating due to transaction reason.
 
 #### Tips for the rent data collected
 *The rent data collected via Lianjia platform represent the intentional prices of the landlords. According to the website, more than a half of the landlords accept further negotiation of the rent registered. Thus, the rent data scraped do not represent the final price of agreement.*
